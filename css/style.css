@@ -1,0 +1,203 @@
+/*Обнуление*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  *,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  :focus,:active{outline: none;}
+  a:focus,a:active{outline: none;}
+  
+  nav,footer,header,aside{display: block;}
+  
+  html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  input,button,textarea{font-family:inherit;}
+  
+  input::-ms-clear{display: none;}
+  button{cursor: pointer;}
+  button::-moz-focus-inner {padding:0;border:0;}
+  a, a:visited{text-decoration: none;}
+  a:hover{text-decoration: none;}
+  ul li{list-style: none;}
+  img{vertical-align: top;}
+  
+  h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+  /*--------------------*/
+  @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+  body {    
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000;
+    min-width: 320px;
+    overflow-x: hidden;
+    height: 700vh;
+    
+    
+}
+.container {
+    margin: 0 auto;
+    width: 1440px;
+    padding: 0 15px;  
+    height: 100%;
+}
+header {    
+    margin-bottom: 100px; 
+    height: 100px;
+    background-color: #a37fc0;
+    opacity: 0.1;    
+}
+header h1 {
+    font-family: 'Montserrat', sans-serif;  
+    margin-bottom: 100px;
+    text-align: center;  
+    font-size: 50px; 
+    color: #3c354a;
+    line-height: 1;
+    /* animation-name: header;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;       */    
+}
+/* @keyframes header {
+    0% {
+        color: #000;
+    }
+    50% {
+        color: gray;
+    }
+    100% {
+        color: white;
+    }
+} */
+
+.wrapper__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media(max-width: 470px) {
+    .wrapper__items{
+        padding: 15px;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+.item {
+    margin-bottom: 30px;
+}
+.item__img {
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.item__img img {
+    transition: 1s; 
+    display: block; 
+  }
+.item__img img:hover {
+    transform: scale(1.2); 
+  }
+.item__info h3 {
+    font-size: 21px;
+    margin-bottom: 0;
+}
+.rating {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+.rating li {
+    display: inline-block;
+    color: rgba(177, 161, 250, 0.87);
+}
+.info__price {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.price {
+    font-weight: 700;
+    font-size: 18px;
+}
+.add-to-cart {
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    min-height: 40px;
+    padding: 0px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    border-radius: 10px;
+    position: relative;
+    top: 0;    
+}
+button {   
+    border-radius: 10px;  
+    box-shadow: 0 5px 0px #3c354a;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+    }
+    
+button:hover{    
+    padding: 0px 50px;
+    background-color: #a37fc0;
+    }
+
+footer {
+    margin-top: 100px;
+}
+
+.contacts__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media(max-width: 470px) {
+    .contacts__list{
+        padding: 15px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contacts__list > *:not(:last-child) {
+        margin-bottom: 15px;
+      }    
+}
+
+.btn-contact {
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    min-height: 40px;
+    padding: 0px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    border-radius: 10px;
+    position: relative;
+    top: 0; 
+}
